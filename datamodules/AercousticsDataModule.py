@@ -43,7 +43,8 @@ class AercousticsDataModule(pl.LightningDataModule):
 
     def setup(self, stage=None):
         # Load data from the data directory
-        data = np.load('/content/drive/MyDrive/BEATs/data.npz', allow_pickle=True)
+        # data = np.load('/content/drive/MyDrive/BEATs/data.npz', allow_pickle=True)
+        data = np.load('home/ubuntu/shared-dir/raw-dataset.zip', allow_pickle=True)
         raw_data = data['raw']
         labels = data['Y'] # one hot encoded labels
 

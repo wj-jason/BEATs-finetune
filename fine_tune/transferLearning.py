@@ -36,7 +36,8 @@ class BEATsTransferLearningModel(pl.LightningModule):
         self.num_classes = num_classes
         self.ft_entire_network = ft_entire_network
 
-        self.checkpoint = torch.load('/content/drive/MyDrive/BEATs/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt1.pt')
+        # self.checkpoint = torch.load('/content/drive/MyDrive/BEATs/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt1.pt')
+        self.checkpoint = torch.load('/home/ubuntu/shared-dir/checkpoints/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt1.pt')
         self.cfg = BEATsConfig(self.checkpoint["cfg"])
 
         self._build_model()
