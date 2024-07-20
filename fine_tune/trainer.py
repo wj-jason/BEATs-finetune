@@ -4,7 +4,7 @@ from pytorch_lightning import cli_lightning_logo
 from pytorch_lightning.cli import LightningCLI
 
 from fine_tune.transferLearning import BEATsTransferLearningModel
-from benchmark_models.BEATS_finetune.datamodules.AercousticsDataModule import AercousticsDataModule
+from datamodules.AercousticsDataModule import AercousticsDataModule
 from callbacks.callbacks import MilestonesFinetuning
 
 # this can run on Lambda VM instance to fine tune the model, still working out some bugs

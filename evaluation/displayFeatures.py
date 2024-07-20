@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 
 def loadBEATs():
     # load the pre-trained checkpoints
-    finetuned_1 = torch.load('/content/drive/MyDrive/BEATs/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt1.pt')
+    finetuned_1 = torch.load('/home/ubuntu/shared-dir/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt1.pt')
 
     cfg = BEATsConfig(finetuned_1['cfg'])
     BEATs_model = BEATs(cfg)
