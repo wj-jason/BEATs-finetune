@@ -1,4 +1,5 @@
 # Multi-Label Audio Classification BEATs Pipeline
+Original paper: https://arxiv.org/abs/2212.09058
 
 This document outlines the steps involved in a multi-label classification pipeline for an audio dataset. The pipeline leverages a fine-tuned BEATs model for feature extraction and t-SNE for dimensionality reduction and visualization.
 
